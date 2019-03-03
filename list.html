@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>Dream Music</title>
+  </head>
+  <body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">DreamMusic</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="home.html">Главная</a></li>
+        <li><a href="">Мой профиль</a></li>
+        <li><a href="">О сервисе</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <main>
+      <div class="container">
+          <div class="row">
+              <div class="col l4">
+                 <h2>Мои плейлисты</h2> 
+              <div class="collection">
+                <a href="#!" class="collection-item"><span class="badge">14</span>Мое любимое</a>
+                <a href="#!" class="collection-item"><span class="new badge">4</span>Для бабушки</a>
+                <a href="#!" class="collection-item"><span class="badge">1</span>Олег Винник</a>
+              </div>
+            
+              </div>
+              <div class="col l8">
+                  <ul class="collection">
+                      <li class="collection-item avatar">
+                          <i class="material-icons circle red">play_arrow</i>
+                          <span class="title">Title</span>
+                          <p>First Line <br>
+                             Second Line
+                          </p>
+                          <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                        </li>
+                        <li class="collection-item avatar">
+                          <i class="material-icons circle red">play_arrow</i>
+                          <span class="title">Title</span>
+                          <p>First Line <br>
+                             Second Line
+                          </p>
+                          <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                        </li>
+                        <li class="collection-item avatar">
+                          <i class="material-icons circle red">play_arrow</i>
+                          <span class="title">Title</span>
+                          <p>First Line <br>
+                             Second Line
+                          </p>
+                          <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                        </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </main>
+ <script src="node_modules/jquery/dist/jquery.min.js"></script>
+      <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+      <script>
+            $('.avatar').click(function() {
+                if($(this).hasClass('play')) {
+                    $(this).removeClass('play');
+                }
+                else {
+                    $(this).addClass('play');
+                }
+            })
+      </script>
+    </body>
+  </html>

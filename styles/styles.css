@@ -1,0 +1,40 @@
+nav {
+  background-color: #f8f9fa;
+}
+nav .brand-logo {
+  color: red;
+}
+nav ul a {
+  color: #000;
+}
+
+main {
+  margin-top: 100px;
+}
+
+.avatar {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+.avatar:hover {
+  opacity: 0.5;
+  transition: opacity 1s ease-in-out;
+}
+
+.play {
+  opacity: 0.5;
+}
+.play i {
+  animation: App-music-play infinite 10s linear;
+}
+
+@keyframes App-music-play {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
